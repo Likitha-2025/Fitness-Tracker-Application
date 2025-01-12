@@ -1,0 +1,15 @@
+It is a Fitness Tracker Application using java swing.
+This Application consists of JFrame, JPanel, swing components(Jbutton, JTextArea, JPanel).
+In java swing we have ActionListener and EventListener but for this code we have only used ActionListener.
+import java.awt.*; - It imports classes for basic abstract window toolkit (AWT) functionality.
+import java.awt.event.*; - It imports classes for handling events like ActionListener. 
+It has 3 classes:
+a) FitnessTracker() —It has three methods: addSteps() which is used to give user defined input using map collection; getStepsByDate() which retrieves steps walked; getDietPlan() which retrieves array representation.
+b) FT1() it is the main class —It extends JFrame (it is used to handle GUI interface buttons and contains the GraphPanel class which can plot the graph.
+c) GraphPanel() —It is the inner class of FT1 which extends JPanel(it is responsible for drawing and displaying the graph based on the input from the FitnessTracker class. It has two methods setStepsByDate() which sets the steps by date to be used for drawing the graph; paint(component(Graphics g)) which draws the graph on the panel based on the user input of steps.
+In the main method we use SwingUtilities.invokeLater(()->new FT1);
+Here,
+      Swing is a method used to ensure the swing components are created and updated in the event dispatch thread(EDT).
+      invokeLater() it is a method.
+      [()->new FT1] it is a lambda expression passed to the method which creates an instance of the FT1 class using the constructor ‘new FT1()’.
+      FT1 here is the constructor.

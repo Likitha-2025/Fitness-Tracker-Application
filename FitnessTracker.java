@@ -170,6 +170,8 @@ public class FT1 extends JFrame {
                     x += (width - 100) / maxX;
                 }
             }
+
+            
         }
     }
     public static void main(String[] args) {
